@@ -25,14 +25,6 @@ En contraste, existe una competencia de nivel **Bajo a Medio** en las intencione
 
 La agregación de demanda de búsqueda para las entidades semánticas del sector en España supera los **1,8 millones de consultas mensuales**. Un portal vertical especializado que desarrolle autoridad tópica en la capa informativa y comparativa de cola larga puede aspirar a capturar entre **150.000 y 300.000 visitas mensuales** en un plazo de **18 a 24 meses**.
 
-| Bloque semántico | Volumen mensual aprox. (España) |
-|---|---|
-| Autoconsumo fotovoltaico (genérico + long tail) | 700.000 - 850.000 |
-| Aerotermia y climatización renovable | 500.000 - 650.000 |
-| Baterías (físicas y virtuales) | 250.000 - 350.000 |
-| Ayudas, subvenciones y trámites (agregado 17 CCAA) | 250.000 - 300.000 |
-| Sinergia fotovoltaica + aerotermia (cola larga combinada) | 20.000 - 40.000 |
-
 ### Perfil del Usuario e Intención de Búsqueda
 
 El usuario tipo se corresponde con un **propietario de vivienda unifamiliar o adosada, de entre 32 y 60 años, con un nivel socioeconómico medio-alto**. Este perfil presenta una orientación analítica elevada y busca resolver dudas operativas concretas en tres fases bien definidas:
@@ -53,404 +45,298 @@ La competencia entre comercializadoras eléctricas por captar clientes de autoco
 
 ### Métricas de Monetización Estimadas
 
-**CPC estimado por tipo de keyword (Google Ads, España):**
-
-| Tipo de keyword | CPC estimado |
-|---|---|
-| "empresa de aerotermia en [ciudad]" | 4,00 € - 8,00 € |
-| "instalador placas solares [ciudad]" | 3,00 € - 6,50 € |
-| "presupuesto placas solares" | 2,50 € - 5,00 € |
-| "precio bomba de calor aerotermia" | 1,80 € - 3,50 € |
-| "batería virtual" / "batería solar precio" | 1,20 € - 3,00 € |
-| "ayudas autoconsumo" / "ayudas aerotermia" | 1,20 € - 2,50 € |
-| Informativo genérico ("qué es la aerotermia", "cómo funciona el autoconsumo") | 0,40 € - 1,00 € |
-
-**RPM estimado (AdSense) según madurez del sitio:**
-
-- **RPM conservador**: 10 - 18 €/1.000 páginas vistas (sitio nuevo, tráfico mayormente informativo).
-- **RPM medio**: 18 - 28 €/1.000 páginas vistas (buena mezcla informativa/transaccional, Auto Ads activado, mayor densidad de anunciantes al cubrir dos verticales — solar y climatización).
-- **RPM optimista**: 28 - 45 €/1.000 páginas vistas (alta proporción de tráfico transaccional/local, complementado con leads y afiliación).
-
-La cobertura conjunta de fotovoltaica y aerotermia amplía el número de categorías de anunciantes que pueden pujar por cada página (comercializadoras eléctricas, instaladores, fabricantes de bombas de calor, entidades financieras de reformas), lo que empuja el RPM medio del portal por encima del que lograría un sitio centrado en un único vertical.
-
-### Estacionalidad
-
-Aquí reside una de las ventajas estructurales de combinar ambos verticales en un mismo portal: sus picos de demanda son **complementarios y no coincidentes**.
-
-- **Autoconsumo fotovoltaico**: pico de interés en primavera-verano (marzo-septiembre), coincidiendo con más horas de sol y facturas elevadas por climatización estival.
-- **Aerotermia y climatización renovable**: pico de interés en otoño-invierno (octubre-febrero), cuando se dispara la necesidad de calefacción eficiente y las consultas sobre sustitución de calderas de gas o gasóleo.
-- **Ayudas y subvenciones**: repuntes puntuales durante todo el año, ligados a la apertura de convocatorias autonómicas y anuncios de fondos europeos.
-
-Esta complementariedad estacional permite mantener un **volumen de tráfico y de ingresos publicitarios mucho más estable a lo largo de los 12 meses** que un portal monotemático, mitigando los valles de audiencia típicos de los nichos estacionales puros.
-
-### Tendencias
-
-Tanto el autoconsumo fotovoltaico como la aerotermia muestran una **tendencia estructural alcista** en España desde 2021, impulsada por la volatilidad del precio de la electricidad, los fondos Next Generation UE, y la normativa europea de descarbonización del parque de viviendas (revisión de la Directiva de Eficiencia Energética de Edificios, que presiona hacia la sustitución de calderas fósiles). No se trata de un nicho de moda pasajera, sino de un cambio de modelo energético a largo plazo, lo que garantiza recorrido de crecimiento del volumen de búsqueda durante al menos la próxima década.
-
----
-
-## 3. Subnichos y Categorías
-
-Estructura propuesta tipo blog con **10 categorías principales** (silos temáticos), cada una con su página de categoría optimizada como "hub":
-
-1. **Cómo funciona el autoconsumo** (educación básica, conceptos, componentes)
-2. **Precios y presupuestos** (costes por tamaño de vivienda, financiación, ROI/amortización)
-3. **Ayudas y subvenciones** (por comunidad autónoma, deducciones fiscales, requisitos)
-4. **Paneles solares: marcas y comparativas** (comparativas de fabricantes, tipos de paneles)
-5. **Baterías físicas y virtuales** (tipos, precios, análisis contable, cuándo compensa cada una)
-6. **Aerotermia y climatización renovable** (funcionamiento, marcas, comparativas frente a gas/gasóleo)
-7. **Sinergia fotovoltaica + aerotermia** (cómo combinar ambas tecnologías, amortización conjunta)
-8. **Trámites y legislación** (CAU, compensación de excedentes, boletín eléctrico, normativa)
-9. **Autoconsumo según tipo de vivienda** (unifamiliar, comunidad de vecinos, segunda residencia)
-10. **Mantenimiento, vida útil y dudas técnicas** (limpieza, garantías, averías, orientación e inclinación)
-
-**Por qué esta estructura:** replica el recorrido natural del usuario (de la curiosidad informativa a la decisión de compra), permite crear silos de enlazado interno potentes por temática, y añade la categoría 7 (sinergia) como puente estratégico entre los dos verticales principales, capturando búsquedas de cola larga de altísimo valor y bajísima competencia que ningún comparador generalista cubre en profundidad.
-
----
-
-## 4. Plan de Contenido Completo (103 artículos)
-
-A continuación, un listado clasificado por categoría con títulos SEO optimizados en long-tail y su intención de búsqueda (**INF** = informativa, **TRANS** = transaccional, **COMP** = comparativa, **LOCAL** = local).
-
-### Categoría 1 — Cómo funciona el autoconsumo (10 artículos)
-
-1. Qué es el autoconsumo fotovoltaico y cómo funciona paso a paso — INF
-2. Diferencia entre autoconsumo con excedentes y sin excedentes — INF
-3. Cómo funciona una instalación solar de noche y en días nublados — INF
-4. Qué componentes tiene una instalación de placas solares (guía completa) — INF
-5. Inversor híbrido vs inversor string: diferencias y cuál elegir — COMP
-6. Qué es la compensación de excedentes y cuánto se puede ahorrar — INF
-7. Autoconsumo individual vs autoconsumo colectivo: qué es mejor — COMP
-8. Cuánta energía produce una placa solar al día en España — INF
-9. Qué es el balance neto y por qué no existe en España — INF
-10. Glosario del autoconsumo solar: 30 términos que debes conocer — INF
-
-### Categoría 2 — Precios y presupuestos (12 artículos)
-
-11. Precio de placas solares para una vivienda de 100 m² en 2026 — TRANS
-12. Precio de placas solares para una vivienda de 150 m² en 2026 — TRANS
-13. Precio de placas solares para una vivienda de 200 m² en 2026 — TRANS
-14. Cuánto cuesta una instalación solar de 3kW, 5kW y 10kW — TRANS
-15. Cuánto se tarda en amortizar una instalación de autoconsumo — INF
-16. Financiación para placas solares: bancos y préstamos verdes en 2026 — TRANS
-17. Precio de placas solares con batería: cuánto sube el presupuesto — TRANS
-18. Cómo pedir presupuesto de placas solares sin compromiso (guía) — TRANS
-19. 7 errores al pedir presupuesto de autoconsumo que te cuestan dinero — INF
-20. Precio del vatio instalado en autoconsumo residencial: qué es normal pagar — INF
-21. Placas solares baratas: ¿merece la pena el low cost? — COMP
-22. Calculadora de ahorro con placas solares: cómo estimarlo tú mismo — INF
-
-### Categoría 3 — Ayudas y subvenciones (14 artículos, con enfoque regional)
-
-23. Ayudas para placas solares y aerotermia en 2026: guía completa por comunidad autónoma — INF
-24. Ayudas autoconsumo y aerotermia Andalucía 2026: requisitos y cuantías — LOCAL
-25. Ayudas autoconsumo y aerotermia Comunidad de Madrid 2026: requisitos y cuantías — LOCAL
-26. Ayudas autoconsumo y aerotermia Cataluña 2026: requisitos y cuantías — LOCAL
-27. Ayudas autoconsumo y aerotermia Comunidad Valenciana 2026: requisitos y cuantías — LOCAL
-28. Ayudas autoconsumo y aerotermia Galicia 2026: requisitos y cuantías — LOCAL
-29. Ayudas autoconsumo y aerotermia País Vasco 2026: requisitos y cuantías — LOCAL
-30. Ayudas autoconsumo y aerotermia Castilla y León 2026: requisitos y cuantías — LOCAL
-31. Ayudas autoconsumo y aerotermia Castilla-La Mancha 2026: requisitos y cuantías — LOCAL
-32. Ayudas autoconsumo y aerotermia Murcia 2026: requisitos y cuantías — LOCAL
-33. Ayudas autoconsumo y aerotermia Aragón 2026: requisitos y cuantías — LOCAL
-34. Deducción fiscal en el IRPF por instalar placas solares o aerotermia: cómo aplicarla — TRANS
-35. Deducción en el IBI por placas solares: qué ayuntamientos la ofrecen — LOCAL
-36. Plan MOVES III: en qué consiste y cómo solicitarlo paso a paso — INF
-
-### Categoría 4 — Paneles solares: marcas y comparativas (10 artículos)
-
-37. Mejores marcas de paneles solares en 2026: comparativa completa — COMP
-38. Paneles monocristalinos vs policristalinos: cuál rinde más — COMP
-39. Paneles solares bifaciales: qué son y cuándo compensan — INF
-40. Cuántos vatios tiene un panel solar y cuántos necesito — INF
-41. Paneles solares flexibles: usos, precios y limitaciones — INF
-42. Mejores inversores solares del mercado: comparativa 2026 — COMP
-43. Huawei vs Fronius vs SolarEdge: comparativa de inversores híbridos — COMP
-44. Garantía de los paneles solares: qué cubre y cuánto dura realmente — INF
-45. Paneles solares de segunda mano: ¿es buena idea instalarlos? — INF
-46. Estructuras de sujeción para placas solares: tipos según tejado — INF
-
-### Categoría 5 — Baterías físicas y virtuales (12 artículos)
-
-47. Batería solar para vivienda: cuándo compensa instalar una — INF
-48. Precio de una batería solar de 5kWh, 10kWh y 15kWh en 2026 — TRANS
-49. Batería de litio vs batería de plomo para autoconsumo — COMP
-50. Cuánto dura una batería solar y cuándo hay que cambiarla — INF
-51. Mejores baterías solares del mercado: comparativa 2026 — COMP
-52. Autoconsumo sin batería: ¿es rentable en España? — INF
-53. Cómo dimensionar la batería solar según tu consumo — INF
-54. Batería virtual: qué es y cómo funciona frente a la física — INF
-55. Mejores ofertas de batería virtual sin cuota mensual en 2026 — TRANS
-56. Batería virtual vs batería física: análisis contable y fiscal — COMP
-57. Caducidad de los excedentes en el mercado libre: la letra pequeña que debes leer — INF
-58. Baterías solares con ayudas: qué subvenciones existen en 2026 — TRANS
-
-### Categoría 6 — Aerotermia y climatización renovable (14 artículos)
-
-59. Qué es la aerotermia y cómo funciona una bomba de calor aire-agua — INF
-60. Cuánto consume realmente una bomba de calor de aerotermia en invierno en un chalet de 120 m² — INF
-61. Precio de una instalación de aerotermia para vivienda de 100, 150 y 200 m² — TRANS
-62. Aerotermia vs caldera de gas: comparativa de coste y eficiencia — COMP
-63. Aerotermia vs caldera de gasóleo: qué conviene cambiar en 2026 — COMP
-64. Mejores marcas de bombas de calor de aerotermia: Daikin, Panasonic, Mitsubishi, Ecoforest — COMP
-65. Aerotermia monobloc vs bibloc: diferencias y cuál elegir — COMP
-66. Suelo radiante y aerotermia: ¿es la combinación ideal? — INF
-67. Aerotermia y radiadores existentes: ¿es compatible sin obra? — INF
-68. Ruido de las bombas de calor de aerotermia: qué debes saber antes de instalar — INF
-69. Ayudas para aerotermia en 2026: requisitos y cuantías por comunidad — TRANS
-70. Cuánto se tarda en amortizar una bomba de calor de aerotermia — INF
-71. Aerotermia en climas fríos: rendimiento real en invierno — INF
-72. Mantenimiento de una bomba de calor de aerotermia: qué hay que revisar cada año — INF
-
-### Categoría 7 — Sinergia fotovoltaica + aerotermia (6 artículos)
-
-73. Fotovoltaica y aerotermia juntas: cómo maximizar el autoconsumo con la bomba de calor — INF
-74. Amortización combinada de bomba de calor y placas solares: cálculo real — TRANS
-75. Cuántos paneles solares necesito para alimentar una bomba de calor de aerotermia — INF
-76. Programar la bomba de calor para consumir el excedente solar: guía práctica — INF
-77. Aerotermia + batería + fotovoltaica: el paquete completo, ¿merece la pena? — TRANS
-78. Casos reales: ahorro anual combinando placas solares y aerotermia — INF
-
-### Categoría 8 — Trámites y legislación (10 artículos)
-
-79. Qué es el CAU (Código de Autoconsumo) y cómo se solicita — INF
-80. Cómo dar de alta el autoconsumo con tu comercializadora eléctrica — INF
-81. Boletín eléctrico para placas solares: qué es y cuánto cuesta — INF
-82. Legalización de una instalación fotovoltaica: pasos y documentación — INF
-83. ¿Necesito licencia de obra para instalar placas solares o aerotermia? — INF
-84. Normativa de autoconsumo en comunidades de vecinos: qué dice la ley — INF
-85. Cuánto tarda en legalizarse una instalación de autoconsumo — INF
-86. Qué pasa si no legalizas tu instalación de placas solares — INF
-87. Impuesto sobre el valor de la producción eléctrica: ¿afecta al autoconsumo? — INF
-88. Cambios en la normativa de autoconsumo y climatización en 2026: qué debes saber — INF
-
-### Categoría 9 — Autoconsumo según tipo de vivienda (8 artículos)
-
-89. Placas solares en vivienda unifamiliar: guía completa — INF
-90. Autoconsumo en comunidades de vecinos: cómo repartir costes y ahorro — INF
-91. Placas solares en segunda residencia: ¿merece la pena? — INF
-92. Placas solares para casa de campo o vivienda aislada de la red — INF
-93. ¿Se pueden instalar placas solares en un tejado de uralita? — INF
-94. Placas solares para autocaravana o camper: guía de dimensionado — INF
-95. Autoconsumo en viviendas de alquiler: quién debe pagar la instalación — INF
-96. Placas solares en tejado plano vs tejado inclinado: diferencias clave — COMP
-
-### Categoría 10 — Mantenimiento, vida útil y dudas técnicas (7 artículos)
-
-97. Mantenimiento de placas solares: qué hay que hacer y cada cuánto — INF
-98. Cómo limpiar placas solares sin dañarlas (guía paso a paso) — INF
-99. Vida útil de una instalación solar: cuántos años dura de verdad — INF
-100. Orientación e inclinación óptima de placas solares en España — INF
-101. Mi instalación solar produce menos de lo esperado: posibles causas — INF
-102. Placas solares y granizo: ¿están cubiertas por el seguro del hogar? — INF
-103. ¿Puedo ampliar mi instalación solar en el futuro si aumento mi consumo? — INF
-
-**Nota de arquitectura de contenido:** los 14 artículos regionales de la categoría 3 son especialmente valiosos porque atacan keywords de **baja competencia y alta intención local**, y son fácilmente escalables a las 17 comunidades autónomas completas en una segunda fase (pasando de 103 a 130+ artículos). La categoría 7 (sinergia) es la de mayor diferenciación competitiva: prácticamente ningún comparador generalista cubre en profundidad la combinación matemática de ambas tecnologías.
-
----
-
-## 5. Estrategia SEO
-
-### Tipo de keywords a atacar
-
-- **Fase 1 (meses 1-4):** long tail informacional de baja competencia (glosario, "qué es", "cómo funciona", dudas técnicas) en ambos verticales (solar y aerotermia). Objetivo: indexar rápido, ganar autoridad temática (topical authority) y empezar a recibir tráfico sin depender de autoridad de dominio.
-- **Fase 2 (meses 4-8):** keywords regionales/locales (ayudas por comunidad autónoma) y comparativas de producto/marca. Menor volumen individual pero muy alta conversión.
-- **Fase 3 (meses 8-14):** keywords de sinergia (categoría 7) y transaccionales de mayor volumen y competencia ("precio placas solares vivienda 150m2", "mejores marcas bombas de calor aerotermia"), una vez el dominio ya tiene autoridad y enlaces internos consolidados.
-
-### Estrategia de enlazado interno
-
-- Modelo **pilar-clúster (silo)**: cada categoría tiene una página "pilar" (guía completa de la categoría) que enlaza a todos los artículos de esa categoría, y cada artículo enlaza de vuelta al pilar.
-- La categoría 7 (sinergia) actúa como **puente de enlazado cruzado** entre los silos de fotovoltaica (categorías 1-5) y aerotermia (categoría 6), reforzando la relevancia temática conjunta del dominio.
-- Los artículos regionales (ayudas por CCAA) enlazan entre sí desde una página "hub" central de ayudas, facilitando el rastreo e indexación rápida de todo el clúster.
-- Anchor text variado y natural, evitando sobre-optimización de anclas exactas.
-
-### Arquitectura web recomendada
-
-```
-Home
-├── /como-funciona-autoconsumo/ (10 artículos)
-├── /precios-presupuestos/ (12 artículos)
-├── /ayudas-subvenciones/ (14 artículos, incluye hub regional)
-├── /marcas-comparativas-solar/ (10 artículos)
-├── /baterias-fisicas-virtuales/ (12 artículos)
-├── /aerotermia-climatizacion/ (14 artículos)
-├── /sinergia-solar-aerotermia/ (6 artículos, puente entre silos)
-├── /tramites-legislacion/ (10 artículos)
-├── /tipos-de-vivienda/ (8 artículos)
-├── /mantenimiento-dudas-tecnicas/ (7 artículos)
-├── /calculadora-ahorro-solar-aerotermia/ (herramienta interactiva, generador de leads)
-└── /sobre-nosotros/, /contacto/, /política de privacidad/, /aviso legal/, /cookies/
-```
-
-URLs planas y descriptivas, certificado SSL, velocidad de carga optimizada (Core Web Vitals), y diseño mobile-first (el 70%+ del tráfico de este nicho es móvil).
-
-### Estrategia de crecimiento (cadencia de publicación)
-
-| Periodo | Cadencia | Artículos acumulados |
+| Métrica de Monetización | Valor Estimado en España | Justificación / Fuente |
 |---|---|---|
-| Mes 1-2 | 5 artículos/semana | ~40 |
-| Mes 3-4 | 4 artículos/semana | ~72 |
-| Mes 5-6 | 4 artículos/semana | ~103 (cubre el plan completo) |
-| Mes 7-14 | 2-3 artículos/semana (ampliación regional + sinergia + actualizaciones) | +60 adicionales |
+| CPC Medio en Google Ads (Search) | 1,20 € – 4,50 € | Keywords del sector como "aerotermia" registran CPCs de 1,33 € a 3,07 €, pudiendo superar los 5,00 € en búsquedas comerciales. |
+| CPC Efectivo en AdSense (Display) | 0,25 € – 0,85 € | Rendimiento derivado tras la comisión de la red de display de Google. |
+| RPM Estimado en AdSense | 12,00 € – 28,00 € | Ingreso por mil impresiones esperado con bloques publicitarios integrados en contenidos técnicos. |
+| RPM en Redes Programáticas Premium | 25,00 € – 55,00 € | Aplicable en plataformas como Mediavine, Raptive o Ezoic tras alcanzar los umbrales de tráfico. |
+| Valor por Lead Cualificado (CPL) | 30,00 € – 100,00 € | Pago por formulario de presupuesto enviado a empresas instaladoras. |
 
-Además de contenido nuevo, es imprescindible dedicar un 20% del esfuerzo mensual a **actualizar artículos existentes** (precios, ayudas vigentes, normativa), especialmente en el vertical de aerotermia, donde los precios de equipos y las ayudas cambian con frecuencia.
+### Estacionalidad y Tendencias de Mercado
+
+El nicho presenta una **estacionalidad perfectamente equilibrada durante todo el año**. Durante la primavera y el verano, las búsquedas experimentan un pico significativo impulsado por la radiación solar y la demanda de aire acondicionado por aerotermia. En contraste, durante el otoño y el invierno, el tráfico se desplaza hacia el consumo de calefacción por bomba de calor, la eficiencia del suelo radiante y la amortización de la aerotermia frente al gasóleo o gas natural.
+
+La tendencia del sector es de **crecimiento estructural sosteniendo tasas al alza**. Directivas comunitarias europeas imponen la sustitución progresiva de calderas de combustión fósil y promueven la rehabilitación energética. Este contexto normativo garantiza un flujo de consultas en expansión durante la próxima década.
 
 ---
 
-## 6. Monetización
+## 3. Subnichos y Categorías de la Web
 
-### Cómo monetizar con AdSense en este nicho
+Para construir una **autoridad tópica (Topical Authority)** sólida que responda a los requerimientos de los algoritmos de búsqueda, la arquitectura del sitio web debe organizarse en silos semánticos estrictos.
 
-- Activar **Auto Ads** de Google AdSense como base, complementado con bloques manuales en las posiciones de mayor rendimiento probado.
-- Priorizar formatos **responsive in-article** y **anuncios nativos**, que en nichos informativos-técnicos como este obtienen mejor CTR que el display puro.
-- La cobertura de dos verticales (solar + aerotermia) amplía el pool de anunciantes que compiten por cada impresión, lo que tiende a elevar el RPM medio del portal frente a un sitio monotemático.
+### Categoría 1: Placas Solares y Autoconsumo Fotovoltaico
 
-### Posiciones recomendadas de anuncios
+Esta sección aborda la dimensión técnica del autoconsumo: cálculo de potencia necesaria, elección entre inversores centrales y microinversores, orientación e inclinación de tejados, trámites administrativos de legalización y esquemas de vertido de energía. Representa la puerta de entrada para la captación de tráfico masivo en fase de descubrimiento e investigación.
 
-1. **Anuncio tras el primer párrafo** (above the fold en móvil): alta visibilidad, buen CTR.
-2. **Anuncio in-content cada ~400-500 palabras** en artículos largos (guías de 1.500+ palabras): 2-3 bloques adicionales.
-3. **Sidebar sticky en desktop** (solo si el diseño lo permite sin perjudicar UX).
-4. **Anchor/sticky ad en móvil** (banner inferior fijo): buen rendimiento, cuidado con no invadir demasiado la pantalla.
-5. **Anuncio al final del artículo**, antes de la sección de artículos relacionados.
+### Categoría 2: Baterías Físicas y Baterías Virtuales
 
-### Otros métodos de monetización adicionales
+La categoría está dedicada a la optimización de los excesos de producción fotovoltaica. Analiza en profundidad las diferencias técnicas y económicas entre el almacenamiento físico en baterías de litio (LFP) y los servicios de almacenamiento contable o baterías virtuales comercializados por las eléctricas. Es la sección de mayor valor comercial, donde el usuario presenta la mayor predisposición a la conversión.
 
-- **Marketplaces de leads para instaladores** (solares y de aerotermia): un lead cualificado que solicita presupuesto puede pagarse entre **15 € y 45 €** (más alto en aerotermia por el ticket medio superior), muy por encima del RPM de AdSense. Es la vía de monetización con mayor techo en este nicho.
-- **Afiliación con comercializadoras eléctricas y comparadores de tarifas** (comisión por alta), incluyendo ofertas de batería virtual.
-- **Afiliación con fabricantes** (Daikin, Panasonic, Ecoforest, Huawei) en programas B2B/B2C cuando estén disponibles, o Amazon afiliados para productos de menor ticket (termostatos inteligentes, kits solares portátiles).
-- **Lead generation propia**: formulario "pide 3 presupuestos gratis" (solar y/o aerotermia) que se vende directamente a instaladores locales.
-- **Newsletter** para fidelizar usuarios interesados en ayudas/subvenciones de ambos verticales.
+### Categoría 3: Aerotermia y Climatización Eficiente
 
-### Estimación realista de ingresos según visitas
+Se enfoca en los sistemas de producción de calefacción, refrigeración y Agua Caliente Sanitaria (ACS) mediante bombas de calor aire-agua. El contenido analiza rendimientos (COP/SCOP), integración con radiadores o suelo radiante, y la combinación estratégica con paneles solares para reducir el consumo a niveles mínimos. Genera los costes por clic más elevados en la publicidad programática.
 
-| Visitas/mes | Solo AdSense (RPM 22€ medio) | + Leads (conversión 0,3% a 30€/lead) | Total estimado/mes |
+### Categoría 4: Subvenciones, Tarifas Eléctricas y Mantenimiento
+
+Comprende el análisis regulatorio y financiero: deducciones en el IRPF por eficiencia energética, bonificaciones del IBI, ayudas Next Generation, comparativas de tarifas eléctricas y protocolos de mantenimiento preventivo. Resuelve dudas de carácter legal y práctico, fidelizando al usuario y capturando tráfico recurrente en momentos clave del año fiscal.
+
+---
+
+## 4. Plan de Contenidos
+
+El plan de contenidos se compone de **60 artículos** optimizados para posicionar palabras clave de cola larga, clasificados por categorías e intenciones de búsqueda.
+
+### Categoría 1: Placas Solares y Autoconsumo Fotovoltaico
+
+| # | Título SEO Optimizado | Palabra Clave Objetivo | Intención de Búsqueda |
 |---|---|---|---|
-| 20.000 | ~440 € | ~1.800 € | ~2.240 € |
-| 60.000 | ~1.320 € | ~5.400 € | ~6.720 € |
-| 150.000 | ~3.300 € | ~13.500 € | ~16.800 € |
-| 300.000 | ~6.600 € | ~27.000 € | ~33.600 € |
+| 1 | Cuántas placas solares necesito para una casa de 100m2: cálculo real | cuantas placas solares necesito casa 100m2 | Informativa |
+| 2 | Inversor central vs microinversores: cuál elegir según tu tejado | inversor central vs microinversores | Comparativa |
+| 3 | Grado de inclinación ideal para paneles solares en España por provincias | inclinacion ideal placas solares españa | Informativa |
+| 4 | Garantía de paneles solares: degradación de potencia a 25 años explicada | garantia degradacion placas solares | Informativa |
+| 5 | ¿Merece la pena instalar optimizadores Tigo o Huawei en zonas de sombra? | merece la pena optimizadores solares | Comparativa |
+| 6 | Cómo saber si un tejado es apto para soportar una instalación fotovoltaica | capacidad carga tejado placas solares | Informativa |
+| 7 | Legalización de autoconsumo fotovoltaico en España: paso a paso en 2026 | legalizacion instalacion solar pasos | Guía / Informativa |
+| 8 | Vertido cero vs compensación de excedentes: diferencias y normativa | vertido cero vs compensacion excedentes | Informativa |
+| 9 | Instalación fotovoltaica aislada vs conectada a red: costes y diferencias | instalacion solar aislada vs red | Comparativa |
+| 10 | Cómo medir la producción real de tus placas con meter trifásico o monofásico | medir produccion real placas solares | Técnica |
+| 11 | Pérdida de rendimiento en placas solares por temperatura en verano | perdida eficiencia paneles solares calor | Informativa |
+| 12 | ¿Es legal instalar placas solares en una comunidad de vecinos adosados? | placas solares adosados comunidad | Legal / Informativa |
+| 13 | Kit solar autoconsumo autoinstalable: riesgos, normativas y ahorro real | kit solar autoconsumo autoinstalable | Evaluativa |
+| 14 | Orientación este-oeste en paneles solares: ventajas sobre la orientación sur | orientacion este oeste placas solares | Informativa |
+| 15 | Placas solares bifaciales en viviendas unifamiliares: ¿cuándo son rentables? | paneles solares bifaciales autoconsumo | Comparativa |
 
-*Nota: la vía de leads requiere infraestructura adicional (acuerdos con instaladores o integración con un marketplace de leads existente); si el proyecto se queda solo en AdSense, los ingresos serán los de la primera columna, aun así muy superiores a la media de nichos genéricos.*
+### Categoría 2: Baterías Físicas y Baterías Virtuales
+
+| # | Título SEO Optimizado | Palabra Clave Objetivo | Intención de Búsqueda |
+|---|---|---|---|
+| 16 | Batería física vs batería virtual: comparativa económica y amortización | bateria fisica vs bateria virtual | Comparativa |
+| 17 | Batería virtual Naturgy: opiniones, comisiones y letra pequeña explicada | bateria virtual naturgy opiniones | Comercial |
+| 18 | Batería virtual Repsol vs Iberdrola SolarCloud: ¿cuál guarda más saldo? | bateria virtual repsol vs iberdrola | Comparativa |
+| 19 | ¿Qué pasa con el saldo de tu batería virtual si cambias de comercializadora? | cambiar de comercializadora bateria virtual | Informativa |
+| 20 | Baterías de litio LFP vs alto voltaje HV: diferencias técnicas | baterias lfp vs alto voltaje solar | Técnica |
+| 21 | Huawei Luna2000 precio e instalación: ¿cuántos kWh necesita tu hogar? | huawei luna2000 precio instalacion | Transaccional |
+| 22 | ¿Se puede conseguir una factura de luz a 0 euros con batería virtual? | factura luz cero euros bateria virtual | Informativa |
+| 23 | Baterías solares con función Backup: cómo no quedarte sin luz en apagones | funcion backup bateria solar apagones | Técnica |
+| 24 | Cuál es la vida útil real de una batería física de autoconsumo en ciclos | vida util ciclos bateria solar litio | Informativa |
+| 25 | Peajes e impuestos aplicados al descargar energía de una batería virtual | comisiones peajes bateria virtual | Informativa |
+| 26 | Batería virtual EDP Solar Wallet: costes fijados por kWh de excedente | edp solar wallet condiciones excedentes | Evaluativa |
+| 27 | Ampliar una batería física existente: compatibilidad y problemas de módulos | ampliar bateria solar existente módulos | Técnica |
+| 28 | ¿Es rentable instalar una batería física si ya tienes tarifa de discriminación? | rentabilidad bateria fisica tarifa nocturna | Comparativa |
+| 29 | Baterías AC vs Baterías DC para paneles solares: integración en el inversor | baterias ac vs dc autoconsumo | Técnica |
+| 30 | Comparativa de las 5 mejores baterías virtuales sin cuota mensual en España | mejor bateria virtual sin cuotas | Comparativa |
+
+### Categoría 3: Aerotermia y Climatización Eficiente
+
+| # | Título SEO Optimizado | Palabra Clave Objetivo | Intención de Búsqueda |
+|---|---|---|---|
+| 31 | Consumo real de la aerotermia al mes en invierno: euros y kWh desglosados | consumo aerotermia mensual invierno | Comercial / Informativa |
+| 32 | Aerotermia con radiadores convencionales de aluminio: ¿es eficiente? | aerotermia con radiadores aluminio | Evaluativa |
+| 33 | Rendimiento COP y SCOP en aerotermia: qué significan estos números | rendimiento cop scop aerotermia | Técnica |
+| 34 | Aerotermia con suelo radiante: precio de instalación por metro cuadrado | aerotermia suelo radiante precio m2 | Transaccional |
+| 35 | Combinar aerotermia con placas solares: cómo programar los impulsos de calor | aerotermia con placas solares fotovoltaicas | Guía / Técnica |
+| 36 | Aerotermia vs caldera de gas natural: tabla comparativa de gasto anual | aerotermia vs gas natural ahorro | Comparativa |
+| 37 | ¿Qué potencia de aerotermia necesita una casa de 120 m2? (8 kW vs 11 kW) | potencia aerotermia vivienda 120 m2 | Evaluativa |
+| 38 | Fancoils para aerotermia en verano: cuál elegir para refrigeración eficiente | fancoils aerotermia refrigeracion verano | Comercial |
+| 39 | Ruido de la unidad exterior de aerotermia: decibelios y normativas urbanas | ruido unidad exterior aerotermia db | Informativa |
+| 40 | Aerotermia multitarea vs sistema monobloc: ventajas de cada arquitectura | aerotermia bibloc vs monobloc | Comparativa |
+| 41 | ¿A qué temperatura debe ajustarse el agua de impulsión para ahorrar luz? | temperatura agua impulsion aerotermia | Guía |
+| 42 | Depósito de inercia en aerotermia: cuándo es obligatorio y cuándo prescindible | deposito inercia aerotermia funcion | Técnica |
+| 43 | Aerotermia solo para Agua Caliente Sanitaria (Nuos / Aerotermo): costes | aerotermo agua caliente sanitaria precio | Comercial |
+| 44 | Problemas de congelación en el evaporador de aerotermia en zonas frías | ciclo desescarche aerotermia congelacion | Técnica |
+| 45 | Cuánto tarda en amortizarse la aerotermia sustituyendo una caldera de gasoil | amortizacion aerotermia por gasoil | Comparativa |
+
+### Categoría 4: Subvenciones, Tarifas Eléctricas y Mantenimiento
+
+| # | Título SEO Optimizado | Palabra Clave Objetivo | Intención de Búsqueda |
+|---|---|---|---|
+| 46 | Deducción IRPF por placas solares y aerotermia: cómo aplicarla en la Renta | deduccion irpf placas solares aerotermia | Guía / Legal |
+| 47 | Bonificación del IBI por instalar placas solares: tabla por ayuntamientos | bonificacion ibi instalacion fotovoltaica | Informativa |
+| 48 | Mantenimiento de aerotermia: qué revisiones exige la ley y cuál es su coste | mantenimiento aerotermia precio anual | Legal / Comercial |
+| 49 | Limpieza de filtros en la unidad interior de aerotermia: paso a paso | limpiar filtros bomba de calor aerotermia | Guía |
+| 50 | Tarifa PVPC vs mercado libre para hogares con placas solares y aerotermia | pvpc vs mercado libre con autoconsumo | Comparativa |
+| 51 | Subvenciones Next Generation para climatización renovable: estado actual | subvenciones next generation aerotermia | Informativa |
+| 52 | Cómo interpretar el certificado de eficiencia energética tras una reforma | certificado eficiencia energetica mejora irpf | Legal |
+| 53 | Pérdida de gas refrigerante en aerotermia: síntomas, detección y precio recarga | perdida gas refrigerante aerotermia coste | Técnica |
+| 54 | Mantenimiento preventivo en instalaciones fotovoltaicas: limpieza de paneles | mantenimiento placas solares coste anual | Informativa |
+| 55 | Potencia contratada en horas valle y punta con aerotermia: cómo ajustarla | ajustar potencia contratada aerotermia | Guía |
+| 56 | ¿Vale la pena contratar un seguro específico para paneles solares? | seguro para placas solares cobertura | Evaluativa |
+| 57 | Inspector de industria para dar de alta placas solares: qué revisa | inspeccion boletin electrico fotovoltaica | Legal |
+| 58 | Término de potencia vs término de energía en facturas de autoconsumo | interpretar factura luz autoconsumo | Informativa |
+| 59 | Qué hacer si tu inversor solar muestra error de sobrevoltaje en la red | error sobrevoltaje inversor fotovoltaico | Técnica |
+| 60 | Peaje de respaldo e historia del impuesto al sol: situación jurídica actual | regulacion legal autoconsumo españa | Legal |
 
 ---
 
-## 7. Coste de Contenido
+## 5. Estrategia SEO y Arquitectura Web
 
-### Coste de un artículo en este nicho (redactor profesional)
+La captación de tráfico orgánico en este proyecto se basa en una aproximación técnica estructurada en tres frentes: selección de palabras clave de baja competencia, un esquema de enlazado interno en silo cerrado y una arquitectura web optimizada para el rastreo eficiente.
 
-Al tratarse de contenido semi-técnico (normativa, cifras, componentes eléctricos y climatización), requiere redactores con capacidad de documentarse bien, lo que eleva el precio frente a contenido genérico:
+### Tipo de Keywords a Atacar
 
-| Tipo de redactor | Precio por palabra | Coste artículo de 1.500 palabras |
+La estrategia adopta un **enfoque piramidal ascendente**. En la fase inicial, el sitio se enfoca en palabras clave de cola larga (long-tail) con volúmenes de búsqueda reducidos (100 a 800 consultas mensuales) pero con intención de búsqueda clara y competencia baja o mal atendida por foros desactualizados. Un ejemplo de este tipo de término es *"consumo aerotermia suelo radiante casa 120m2 enero"*.
+
+A medida que el dominio adquiere autoridad, se atacan términos de volumen medio (1.000 a 5.000 consultas mensuales) orientados a comparativas de marcas y servicios. Finalmente, la acumulación de relevancia temática permite posicionar términos semilla de alto volumen como *"precio aerotermia"* o *"batería virtual"*.
+
+### Estrategia de Enlazado Interno (Interlinking)
+
+Para maximizar la transferencia del valor de los enlaces (PageRank) y canalizar la autoridad hacia las páginas de mayor valor comercial, se aplica una **arquitectura de silos contextuales cerrados**.
+
+Cada categoría actúa como un nodo concentrador. La página principal de la categoría enlaza hacia los artículos pilares, y cada artículo pilar enlaza de regreso a la categoría madre utilizando variaciones del texto de ancla (anchor text).
+
+El enlazado horizontal se restringe estrictamente a contenidos pertenecientes al mismo silo. Un artículo sobre la "Batería Virtual Naturgy" enlazará únicamente a otros análisis de baterías o a la comparativa general de "Batería física vs Batería virtual". Se evita el enlazado cruzado entre silos diferentes salvo en artículos de intersección técnica previamente identificados, como la guía de "Combinar aerotermia con placas solares".
+
+### Arquitectura Web Recomendada
+
+Se establece una estructura plana de URLs, limitando la profundidad a un máximo de dos niveles por debajo del dominio raíz:
+
+La página de inicio (Home) da acceso directo a las cuatro categorías principales (`/placas-solares/`, `/baterias-solares/`, `/aerotermia/`, `/subvenciones-tarifas/`). A su vez, los contenidos cuelgan directamente de su categoría correspondiente (por ejemplo, `/aerotermia/consumo-real-aerotermia-invierno/`). Todas las páginas deben implementar migas de pan (breadcrumbs) validadas mediante el esquema `BreadcrumbList` de Schema.org en formato JSON-LD.
+
+### Estrategia de Crecimiento y Publicación
+
+Durante los dos primeros meses se procede a la publicación del bloque inicial compuesto por 30 artículos pilares, distribuidos equitativamente entre las cuatro categorías para asentar la estructura temática. Entre los meses tres y cinco, se mantiene un ritmo de publicación constante de cuatro artículos semanales hasta completar el lote inicial de 60 contenidos. A partir del sexto mes, la estrategia combina la adición de dos contenidos semanales con revisiones técnicas de los artículos ya indexados, ajustando títulos y respuestas según los datos de impresión obtenidos en Google Search Console.
+
+---
+
+## 6. Estrategia de Monetización Multi-Canal
+
+El modelo de negocio combina tres vías de ingresos independientes que se complementan según el tipo de contenido y la fase del embudo de conversión en la que se encuentra el usuario.
+
+### Publicidad Programática (Google AdSense y Redes Premium)
+
+La colocación de anuncios se optimiza para maximizar la visibilidad (*viewability*) sin degradar la experiencia de usuario ni la velocidad de carga (Core Web Vitals):
+
+Se insertan bloques publicitarios integrados en el texto (in-article) tras los encabezados secundarios (H2), coincidiendo con los puntos de mayor pausa de lectura. En dispositivos móviles, se activa un anuncio adhesivo en el pie de página (sticky footer) con un porcentaje de visibilidad superior al 85%. En la versión de escritorio, se configura un bloque lateral fijo (sticky sidebar) de 300x600 píxeles que permanece visible durante el desplazamiento del usuario.
+
+### Generación y Venta de Leads Cualificados (CPL)
+
+Los artículos con intención comparativa o comercial incorporan formularios interactivos para la solicitud de presupuestos de instalación o auditoría energética. Los datos captados (ubicación, tipo de vivienda, consumo medio y tecnología requerida) se derivan a empresas instaladoras locales o redes de intermediación bajo un modelo de pago por lead cualificado (CPL), con tarifas que oscilan entre los **30 € y los 100 €** por solicitud validada.
+
+### Marketing de Afiliación Especializado
+
+En artículos enfocados en componentes menores o equipamiento complementario, se implementan enlaces de afiliación hacia plataformas de comercio electrónico. Esta vía monetiza recomendaciones sobre medidores de consumo energético inteligentes, cargadores para vehículos eléctricos, kits solares autoinstalables e inversores portátiles.
+
+### Estimación Realista de Ingresos según Tráfico Orgánico
+
+| Tráfico Mensual | AdSense / Programática (RPM 20€) | Venta de Leads (CPL) | Afiliación Especializada | Ingresos Totales / Mes |
+|---|---|---|---|---|
+| 15.000 visitas | 300 € | 375 € (10 leads) | 100 € | 775 € |
+| 50.000 visitas | 1.000 € | 1.250 € (30 leads) | 350 € | 2.600 € |
+| 150.000 visitas | 3.000 € | 3.750 € (90 leads) | 1.100 € | 7.850 € |
+| 300.000 visitas | 6.000 € | 7.500 € (180 leads) | 2.500 € | 16.000 € |
+
+---
+
+## 7. Análisis de Costes de Redacción e Inversión Inicial
+
+La producción de contenido en este nicho requiere rigurosidad técnica para cumplir con las directrices de calidad de Google (E-E-A-T).
+
+### Coste con Redactores Freelance Especializados
+
+En España, las tarifas para redactores con experiencia en ingeniería, energías renovables o normativa eléctrica oscilan entre los **0,05 € y los 0,08 €** por palabra. Para artículos extensos con una longitud media de 1.500 palabras orientadas a SEO, el coste unitario por contenido se sitúa entre los **80 € y los 150 €**.
+
+### Presupuesto Estimado para el Lanzamiento (Lote de 50 Artículos)
+
+| Concepto de Inversión | Detalle de Costes | Coste Estimado (EUR) |
 |---|---|---|
-| Redactor freelance generalista (con documentación) | 0,04 € - 0,06 € | 60 € - 90 € |
-| Redactor especializado en energía/climatización | 0,07 € - 0,10 € | 105 € - 150 € |
-| Agencia de contenidos SEO | 0,08 € - 0,12 € | 120 € - 180 € |
+| Redacción Técnica Especializada | 50 artículos de 1.500 palabras a ~0,07 €/palabra | 5.250 € – 6.000 € |
+| Dominio y Alojamiento Web | Registro de dominio .es/.com + Hosting NVMe de alto rendimiento | 120 € – 200 € |
+| Infraestructura Web y Licencias | Tema profesional optimizado + Plugins de rendimiento y SEO | 150 € – 250 € |
+| Branding y Material Gráfico | Identidad visual, logotipo e infografías técnicas | 300 € – 500 € |
+| **Inversión Total Inicial (Redacción Tradicional)** | Desarrollo completo con redacción profesional delegada | **5.820 € – 6.950 €** |
 
-### Precio medio por palabra recomendado para este proyecto
+### Alternativa Eficiente: Producción Híbrida (IA + Edición Experta)
 
-**0,05 € - 0,07 €/palabra**, con artículos de 1.200-1.800 palabras según categoría (los artículos regionales de ayudas pueden ser más cortos, 800-1.000 palabras; las guías pilares y de sinergia más largas, 2.000-2.500 palabras).
-
-### Presupuesto estimado para lanzar la web (103 artículos)
-
-| Concepto | Coste estimado |
-|---|---|
-| 103 artículos × ~1.400 palabras × 0,06 €/palabra | ≈ 8.650 € |
-| Dominio + hosting (1 año, hosting de calidad) | ≈ 150 € |
-| Diseño/tema WordPress + configuración técnica | ≈ 300 € - 600 € |
-| Imágenes/infografías (bancos de imágenes o diseño propio) | ≈ 250 € - 500 € |
-| Herramienta SEO (Ahrefs/Semrush, 6 meses) | ≈ 600 € - 900 € |
-| **Total estimado (lanzamiento con redacción humana)** | **≈ 9.900 € - 11.000 €** |
-
-### Alternativa usando IA
-
-Con un flujo de trabajo de **generación con IA + edición y verificación de datos por un humano especializado** (imprescindible en este nicho por la parte normativa/legal y técnica, que no puede dejarse sin revisar):
-
-| Concepto | Coste estimado |
-|---|---|
-| Generación de borrador con IA (coste de API/herramienta) | ≈ 0,50 € - 1,50 € por artículo |
-| Edición, verificación de datos y optimización SEO por humano (30-45 min/artículo a 15-20 €/h) | ≈ 8 € - 15 € por artículo |
-| **Coste por artículo con flujo IA + revisión humana** | **≈ 10 € - 17 €** |
-| **Total 103 artículos** | **≈ 1.150 € - 1.800 €** |
-
-**Recomendación:** usar el flujo IA + revisión humana reduce el presupuesto de contenido en más de un 80%, pero **es obligatorio revisar manualmente cifras, ayudas vigentes y normativa técnica** (especialmente en aerotermia, donde el rendimiento COP/SCOP varía por marca y clima) para evitar errores que dañen la credibilidad E-E-A-T del sitio.
+Para optimizar el uso del capital de trabajo, se propone un modelo de producción híbrido. Las estructuras e investigaciones iniciales se generan mediante herramientas de IA entrenadas con documentación técnica oficial de fabricantes y textos del BOE. Posteriormente, un especialista en energías renovables o consultor SEO revisa, corrige y valida las fórmulas numéricas, los costes de instalación y la coherencia técnica. Este enfoque reduce el coste de edición a una horquilla de **0,015 € a 0,025 €** por palabra, situando el presupuesto total para 50 artículos entre los **1.200 € y los 1.800 €**.
 
 ---
 
-## 8. Proyección de Ingresos
+## 8. Proyección Financiera de Ingresos y Escala
 
-### Escenarios a 18-24 meses
+### Modelización Financiera a 24 Meses
 
-| Escenario | Tráfico (mes 18-24) | Ingresos/mes | Ingresos acumulados (18-24 meses aprox.) |
-|---|---|---|---|
-| **Conservador** | 60.000 visitas | 1.300 € - 2.000 € | 10.000 € - 16.000 € |
-| **Medio** | 150.000 visitas | 4.500 € - 7.000 € | 35.000 € - 55.000 € |
-| **Optimista** | 280.000 visitas | 9.000 € - 15.000 € | 70.000 € - 110.000 € |
+Se estiman tres escenarios financieros basados en el lanzamiento inicial con 60 artículos y la incorporación posterior de cuatro artículos mensuales de mantenimiento.
 
-*(Cifras que combinan AdSense + una monetización moderada de leads; sin leads, reducir aproximadamente a la mitad.)*
+| Escenario de Rendimiento | Tráfico Mensual (Mes 12) | Ingresos Mensuales (Mes 12) | Tráfico Mensual (Mes 24) | Ingresos Mensuales (Mes 24) |
+|---|---|---|---|---|
+| Escenario Conservador | 18.000 visitas | 400 € | 75.000 visitas | 2.400 € |
+| Escenario Medio | 45.000 visitas | 1.250 € | 180.000 visitas | 7.600 € |
+| Escenario Optimista | 90.000 visitas | 3.200 € | 350.000 visitas | 17.300 € |
 
-### Tiempo estimado para generar ingresos
+### Tiempo Estimado para la Generación de Ingresos
 
-- **Primeros ingresos relevantes:** mes 3-4 (una vez Google empieza a indexar y posicionar el primer bloque de artículos long tail).
-- **Ingresos estables y crecientes:** mes 6-10, apoyados en la estabilidad de tráfico que aporta la complementariedad estacional entre solar y aerotermia.
-- **Punto de inflexión (crecimiento compuesto por autoridad de dominio):** mes 14-20, momento en que el sitio empieza a posicionar también keywords más competidas sin esfuerzo adicional proporcional.
+Durante los cuatro primeros meses, el proyecto se encuentra en fase de asentamiento (*sandbox*), registrando tráfico marginal e ingresos nulos. Entre los meses cinco y ocho, la web comienza a consolidar palabras clave de cola larga, alcanzando entre 5.000 y 15.000 visitas mensuales, lo que permite la aprobación en Google AdSense y los primeros ingresos (50 € a 300 €/mes).
 
-### Escalabilidad del proyecto
+Entre los meses nueve y catorce, se produce la aceleración del tráfico orgánico superando las 40.000 visitas mensuales. Se activan las vías de monetización por leads y afiliación, alcanzando el punto de equilibrio (*break-even*) de la inversión inicial. Del mes quince al veinticuatro, el proyecto entra en fase de madurez con más de 100.000 visitas mensuales, posibilitando el acceso a redes programáticas premium.
 
-- **Escalado horizontal de contenido:** ampliar el clúster regional de ayudas a las 17 comunidades autónomas completas y a nivel provincial/ciudad en las capitales más grandes, tanto para solar como para aerotermia.
-- **Escalado por producto:** domótica energética, coche eléctrico y punto de recarga doméstico, y eficiencia energética integral de la vivienda (aislamiento, ventanas) son nichos "hermanos" con audiencia solapada.
-- **Escalado por modelo de negocio:** migrar parte del tráfico transaccional de AdSense puro a un modelo de generación y venta de leads propio (mucho mayor margen), diferenciando leads de solar y de aerotermia.
-- **Escalado geográfico:** replicar el modelo en Latinoamérica (México, Colombia, Chile) adaptando normativa y ayudas locales.
+### Escalabilidad del Proyecto
+
+El activo digital cuenta con tres vectores de expansión una vez asentada la autoridad en el mercado español. En primer lugar, la adaptación de contenidos para mercados hispanoamericanos en crecimiento fotovoltaico (México, Chile, Colombia). En segundo lugar, la integración de contenidos sobre movilidad eléctrica doméstica (puntos de carga e integración V2G). Finalmente, la creación de calculadoras interactivas en JavaScript (simuladores de deducción IRPF o amortización de baterías virtuales), que actúan como activos para la captación de enlaces entrantes naturales (*link magnets*).
 
 ---
 
-## 9. Ejemplo Práctico
+## 9. Ejemplo Práctico de Implementación
 
-### Simulación de la web
+### Selección de Nombre de Dominio
 
-**Nombre de dominio sugerido:** `climatizacionsolar.es`, `autoconsumoyclima.es` o `hogarenergiarenovable.es` (comprobar disponibilidad real antes de registrar; se recomienda dominio .es para reforzar la señal de relevancia geográfica en España, asegurando también la variante .com como defensiva).
+Se recomienda utilizar un dominio de marca evocativo con coincidencia parcial (*Partial Match Domain*), evitando dominios de coincidencia exacta obsoletos:
 
-**Nombre de marca sugerido:** *Autoconsumo y Clima* — transmite con claridad la doble propuesta de valor (energía solar + climatización renovable) y encaja con el posicionamiento de "guía técnica independiente para el propietario que quiere electrificar su hogar de forma eficiente".
+- `autoconsumopro.es`
+- `wattsvivienda.com`
+- `kilovatioverde.es`
 
-### Estructura inicial del sitio
+### Estructura Inicial del Sitio Web
 
-```
-autoconsumoyclima.es/
-│
-├── Home (resumen de las 10 categorías + últimos artículos + calculadora destacada)
-│
-├── /como-funciona-autoconsumo/          → Página pilar + 10 artículos
-├── /precios-presupuestos/               → Página pilar + 12 artículos + CTA "pide presupuesto gratis"
-├── /ayudas-subvenciones/                → Página pilar + hub regional (17 CCAA) + 14 artículos
-├── /marcas-comparativas-solar/          → Página pilar + 10 artículos comparativos con tablas
-├── /baterias-fisicas-virtuales/         → Página pilar + 12 artículos
-├── /aerotermia-climatizacion/           → Página pilar + 14 artículos
-├── /sinergia-solar-aerotermia/          → Página pilar + 6 artículos (contenido diferencial)
-├── /tramites-legislacion/               → Página pilar + 10 artículos
-├── /tipos-de-vivienda/                  → Página pilar + 8 artículos
-├── /mantenimiento-dudas-tecnicas/       → Página pilar + 7 artículos
-│
-├── /calculadora-ahorro-solar-aerotermia/ (herramienta, capta email y genera leads)
-│
-└── Páginas legales: /sobre-nosotros/ /contacto/ /aviso-legal/ /privacidad/ /cookies/
-```
+La arquitectura inicial se despliega siguiendo el esquema de organización jerárquica definido para el proyecto:
 
-**Home page:** bloque hero con la calculadora de ahorro combinado (solar + aerotermia) como gancho principal, seguido de las 10 categorías en tarjetas visuales, y un bloque de "últimos artículos" y "ayudas vigentes este mes" para reforzar la sensación de actualidad (señal positiva tanto para el usuario como para E-E-A-T).
+En la página de inicio (Home), se presenta una propuesta de valor enfocada en la independencia energética del hogar, dando acceso a las calculadoras interactivas y a los cuatro silos principales.
+
+La categoría `/placas-solares/` alberga contenidos como `/cuantas-placas-solares-necesito-casa-100m2/`, `/inversor-central-vs-microinversores/` y `/orientacion-este-oeste-placas-solares/`.
+
+La categoría `/baterias-solares/` integra artículos clave como `/bateria-fisica-vs-bateria-virtual/`, `/bateria-virtual-naturgy-opiniones/` y `/huawei-luna2000-precio-instalacion/`.
+
+La categoría `/aerotermia/` incluye guías técnicas como `/consumo-real-aerotermia-invierno/`, `/aerotermia-con-radiadores-aluminio/` y `/potencia-aerotermia-vivienda-120m2/`.
+
+La categoría `/subvenciones-tarifas/` contiene análisis normativos como `/deduccion-irpf-placas-solares-aerotermia/` y `/mantenimiento-aerotermia-precio-anual/`.
+
+El sitio se completa con las páginas institucionales obligatorias (`/sobre-nosotros/`, `/politica-de-privacidad/`) optimizadas para proyectar las señales de confianza que exige el algoritmo de evaluación de Google.
 
 ---
 
-## 10. Conclusión
+## 10. Conclusión y Recomendación Directiva
 
-### ¿Vale la pena este nicho?
+### Valoración de Viabilidad
 
-**Sí, y con un perfil de riesgo/beneficio más favorable que el de un portal monotemático de solar.** La combinación de autoconsumo fotovoltaico y aerotermia aporta tres ventajas competitivas claras: **CPC y RPM elevados por el alto ticket medio de ambos verticales, un volumen de demanda agregado superior a 1,8 millones de búsquedas mensuales, y una estabilidad de tráfico e ingresos a lo largo del año** gracias a la complementariedad estacional (solar en verano, aerotermia en invierno). A esto se suma una categoría de contenido (sinergia fotovoltaica + aerotermia) prácticamente sin competencia de calidad, ideal para construir autoridad diferencial.
+El desarrollo de un portal vertical sobre autoconsumo energético y climatización renovable constituye una inversión altamente rentable dentro del sector de monetización web en español. El mercado combina volúmenes de búsqueda en expansión sostenida con unas métricas publicitarias (CPC y RPM) sensiblemente superiores a la media de la red de display.
 
-### Riesgos principales
+### Principales Riesgos del Proyecto
 
-- **Riesgo normativo y de actualización doble:** al cubrir dos verticales regulados (autoconsumo eléctrico y climatización), el esfuerzo de mantenimiento de contenido actualizado es mayor que en un portal monotemático.
-- **Riesgo de algoritmo (Google):** al rozar contenido con componente económico/técnico (cercano a YMYL), Google exige señales de autoridad y confianza (autor identificable, fuentes citadas, política de privacidad clara, sitio seguro) más estrictas que en nichos de entretenimiento.
-- **Riesgo de competencia de grandes comparadores y fabricantes**: players con mucho presupuesto pueden entrar con fuerza en long tail si detectan la oportunidad; la ventaja del proyecto pequeño es la agilidad, la especialización regional y la profundidad en el contenido de sinergia, que a estos actores les resulta menos rentable cubrir.
-- **Riesgo de dependencia de una sola fuente de tráfico** (Google orgánico): mitigar con newsletter y, a medio plazo, presencia en redes/YouTube para diversificar.
+El riesgo primario reside en la exposición a actualizaciones de calidad de Google (*Core Updates*) en temáticas sensibles (YMYL). Este factor se mitiga acreditando la autoría de los contenidos mediante perfiles de expertos del sector energético e integrando referencias normativas oficiales. Un segundo riesgo proviene de la volatilidad regulatoria y comercial de las tarifas eléctricas, lo que exige revisiones periódicas del contenido para mantener la exactitud de los datos. Por último, la irrupción de respuestas sintéticas por IA en el buscador obliga a distanciar el plan de contenidos de las respuestas simples, priorizando análisis comparativos y datos de amortización complejos.
 
-### Recomendación final
+### Recomendación Final
 
-Lanzar el proyecto con un **presupuesto inicial de 1.200-2.000 €** (flujo IA + revisión humana experta) para los primeros 100+ artículos, priorizando el contenido long tail informativo en ambos verticales durante los primeros 4 meses, seguido de la categoría de sinergia como palanca de diferenciación. Reinvertir los primeros ingresos de AdSense en ampliar el clúster regional a las 17 comunidades autónomas completas (tanto solar como aerotermia) y en explorar un acuerdo de venta de leads con instaladores locales, que es la palanca de mayor rentabilidad a medio plazo. Con una ejecución disciplinada, es razonable esperar **ingresos estables de 4.000-7.000 €/mes a partir del mes 10-14**, con recorrido claro de escalado hacia los 15.000 €+/mes a los 24 meses combinando AdSense y leads en ambos verticales.
+Se aconseja proceder con la ejecución del proyecto adoptando el modelo de producción híbrido para la fase de contenidos iniciales. La combinación de una demanda de consumo orientada al ahorro energético, el respaldo normativo a la electrificación y los elevados ingresos por usuario que ofrece la captación de leads en este sector aseguran la creación de un activo digital rentable con alta capacidad de liquidez a largo plazo.
+
+---
+
+## Obras citadas
+
+1. La verdad sobre la batería virtual: ¿merece la pena? - VATTIO, https://vattio.es/guias/bateria-virtual-merece-la-pena/
+2. ¿Es rentable la aerotermia en 2026? Análisis real para viviendas y empresas - Ecoforest, https://ecoforest.com/es/blog/es-rentable-la-aerotermia/
+3. Autoconsumo fotovoltaico + recarga EV + aerotermia: insights SEO - Claris Data, https://clarisdata.es/products/solar-carga-aerotermia-tier-2
+4. Batería virtual vs. física: cuál elegir en tu casa | Holaluz, https://blog.holaluz.com/bateria-virtual-vs-bateria-fisica
+5. Consumo aerotermia: ¿cuánto gasta al mes en luz? - Coolfy Clima, https://www.coolfy.net/blog/consumo-aerotermia
+6. Las 5 mejores Baterías Virtuales y Comparativa 2026 - Alromar Energía, https://alromar-energia.es/blog/comparativa-de-baterias-virtuales/
+7. Baterías virtuales vs físicas: diferencias y cuándo elegir cada una - Auro Solar, https://aurosolar.es/blog/baterias-virtuales-vs-fisicas
+8. Consumo real de la aerotermia: cuánto gasta al mes en 2026 - Fotovol, https://fotovol.com/energias-renovables/consumo-aerotermia-girona/
+9. SEO & Tráfico: Soluciones Energéticas Integrales 2024 – Claris Data, https://clarisdata.es/products/climatizacion-y-renovables-integradas-tier-2
+10. Mantenimiento de Aerotermia: ¿Merece la Pena? Te lo Contamos - Grupo Aplus, https://www.grupoaplus.es/mantenimiento-de-aerotermia/
+11. ¿Qué mantenimiento necesita un equipo de aerotermia? - Daikin, https://www.daikin.es/es_es/hogar/inspiracion/articulos/mantenimiento-aerotermia.html
+12. ▷ Mantenimiento de aerotermia: coste, normativa y claves - Energanova, https://energanova.es/mantenimiento-aerotermia/
+13. Mantenimiento de la aerotermia | Precio y consejos - SotySolar, https://sotysolar.es/blog/aerotermia-coste-mantenimiento
+14. 7 Formas de Monetizar um Site em 2026 (com Exemplos) - CrazyStack, https://www.crazystack.com.br/7-formas-monetizar-site-2026-exemplos
+15. Tarifas Actuales para Redactores Freelance en España - Comunicua, https://comunicua.com/blog/tarifas-actuales-para-redactores-freelance-en-espana
+16. ¿Cuánto cobra un redactor SEO freelance? Tarifas comunes - Patricia Jorde, https://patriciajorde.es/tarifas-redactor-seo/
+17. Cuánto cobrar como freelance en España: Ejemplos reales 2026 | Vacantes Remotas, https://www.vacantesremotas.com/blog/cuanto-cobrar-como-freelance-en-espana-ejemplos-reales-2026
+18. ¿Cuánto cuesta el SEO en 2026? Precios reales, tarifas y factores clave - Javier López, https://soyjavierlopez.com/cuanto-cuesta-seo-precios-tarifas-factores-clave/
