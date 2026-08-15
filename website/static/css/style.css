@@ -163,7 +163,9 @@ h1, h2, h3 {
 
 .mobile-nav { display: none; border-top: 1px solid var(--line); background: var(--surface); }
 .mobile-nav ul { list-style: none; margin: 0; padding: 8px 24px 16px; display: flex; flex-direction: column; gap: 4px; }
-.mobile-nav .nav-link { display: block; padding: 10px 0; }
+/* width:fit-content evita que el subrayado de "activo" cruce toda la fila y
+   se confunda con un separador de secciones. */
+.mobile-nav .nav-link { display: block; width: fit-content; padding: 10px 0; }
 .mobile-nav.open { display: block; }
 
 @media (max-width: 780px) {
@@ -195,8 +197,8 @@ h1, h2, h3 {
 .arc-label { font-family: var(--font-mono); font-size: 11px; fill: var(--ink-faint); }
 
 @media (max-width: 900px) {
-  .hero-grid { grid-template-columns: 1fr; }
-  .hero-visual { order: -1; }
+  .hero-grid { grid-template-columns: 1fr; gap: 32px; }
+  .hero { padding: 40px 0 32px; }
 }
 
 /* ---------------------------------------------------------------- buttons */
@@ -310,6 +312,7 @@ h1, h2, h3 {
 /* ---------------------------------------------------------------- page header / breadcrumbs */
 
 .page-header { padding: 40px 0 8px; }
+.page-header h1 { font-size: clamp(1.55rem, 3.4vw, 2.3rem); margin: 0 0 10px; }
 .page-lede { color: var(--ink-soft); font-size: 1.05rem; max-width: 60ch; }
 
 .breadcrumbs { margin-bottom: 18px; }
@@ -328,6 +331,13 @@ h1, h2, h3 {
 .breadcrumbs a { color: var(--ink-faint); text-decoration: none; }
 .breadcrumbs a:hover { color: var(--ink); }
 
+/* En móvil la última miga repite el H1 que va justo debajo y roba tres líneas
+   de pantalla; se oculta visualmente pero sigue en el DOM y en el JSON-LD. */
+@media (max-width: 640px) {
+  .breadcrumbs li[aria-current="page"] { display: none; }
+  .breadcrumbs li:nth-last-child(2)::after { content: none; }
+}
+
 /* ---------------------------------------------------------------- article body */
 
 .article-meta {
@@ -336,11 +346,65 @@ h1, h2, h3 {
   color: var(--ink-faint);
   margin-top: 10px;
 }
+/* La cabecera del artículo comparte medida con la columna de texto para que
+   el H1 y los párrafos queden alineados en el mismo eje vertical. */
+.article-head { max-width: 72ch; }
+
+/* La columna lateral queda a ras del borde derecho del contenedor (igual que
+   el resto de secciones); la medida de lectura se limita dentro del texto. */
+.article-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 300px;
+  gap: 64px;
+  align-items: start;
+}
 .article-body {
-  max-width: 74ch;
+  min-width: 0;
+  max-width: 72ch;
   padding: 32px 0 8px;
 }
-.article-body h2 { font-size: 1.4rem; margin: 40px 0 16px; }
+
+.article-aside { padding-top: 32px; }
+.aside-sticky { position: sticky; top: 92px; }
+
+.toc {
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--surface);
+  padding: 18px 20px;
+}
+.toc h2 { margin: 0 0 10px; font-size: 0.72rem; }
+.toc ol {
+  list-style: none;
+  counter-reset: toc;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.toc li { counter-increment: toc; display: flex; gap: 10px; }
+.toc li::before {
+  content: counter(toc, decimal-leading-zero);
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  color: var(--amber);
+  padding-top: 2px;
+}
+.toc a {
+  font-size: 0.88rem;
+  line-height: 1.35;
+  color: var(--ink-soft);
+  text-decoration: none;
+}
+.toc a:hover { color: var(--ink); text-decoration: underline; }
+
+@media (max-width: 1040px) {
+  .article-layout { grid-template-columns: minmax(0, 1fr); gap: 0; }
+  .article-aside { display: none; }
+}
+/* scroll-margin evita que la cabecera sticky tape el título al saltar desde el índice */
+.article-body h2 { font-size: 1.4rem; margin: 40px 0 16px; scroll-margin-top: 88px; }
 .article-body p { margin: 0 0 18px; color: var(--ink); }
 .article-body .note {
   font-size: 0.92rem;
@@ -387,6 +451,12 @@ tbody tr:last-child td { border-bottom: none; }
   justify-content: center;
   margin: 28px 0;
 }
+.ad-slot--tower {
+  min-height: 600px;
+  margin: 20px 0 0;
+}
+/* Sin índice encima, la torre no necesita separación superior. */
+.aside-sticky > .ad-slot--tower:first-child { margin-top: 0; }
 .ad-slot-label {
   font-family: var(--font-mono);
   font-size: 0.72rem;

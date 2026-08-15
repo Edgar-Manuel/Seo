@@ -8,6 +8,7 @@
     toggle.addEventListener("click", function () {
       var isOpen = mobileNav.classList.toggle("open");
       toggle.setAttribute("aria-expanded", isOpen ? "true" : "false");
+      toggle.setAttribute("aria-label", isOpen ? "Cerrar menú" : "Abrir menú");
     });
   }
 

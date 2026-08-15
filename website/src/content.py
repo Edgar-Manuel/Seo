@@ -23,6 +23,7 @@ CATEGORIES = [
     {
         "slug": "placas-solares",
         "eyebrow": "Silo 01",
+        "planned": 15,
         "name": "Placas Solares y Autoconsumo Fotovoltaico",
         "short": "Dimensionado, inversores, orientación y legalización de una instalación fotovoltaica.",
         "description": (
@@ -35,6 +36,7 @@ CATEGORIES = [
     {
         "slug": "baterias-solares",
         "eyebrow": "Silo 02",
+        "planned": 15,
         "name": "Baterías Físicas y Virtuales",
         "short": "Litio, baterías virtuales de las comercializadoras y cuándo compensa cada opción.",
         "description": (
@@ -47,6 +49,7 @@ CATEGORIES = [
     {
         "slug": "aerotermia",
         "eyebrow": "Silo 03",
+        "planned": 15,
         "name": "Aerotermia y Climatización Eficiente",
         "short": "Bombas de calor aire-agua: consumo real, rendimiento COP/SCOP y combinación con solar.",
         "description": (
@@ -58,6 +61,7 @@ CATEGORIES = [
     {
         "slug": "subvenciones-tarifas",
         "eyebrow": "Silo 04",
+        "planned": 15,
         "name": "Subvenciones, Tarifas y Mantenimiento",
         "short": "Deducciones fiscales, ayudas Next Generation, normativa y mantenimiento preventivo.",
         "description": (
@@ -134,7 +138,10 @@ ARTICLES = [
                     "Si tu objetivo es maximizar el autoconsumo (por ejemplo, porque planeas incorporar "
                     "aerotermia o un coche eléctrico en los próximos 2-3 años), es razonable sobredimensionar "
                     "moderadamente pensando en esa demanda futura, ya que ampliar una instalación ya "
-                    "hecha suele ser más caro que instalar unos paneles de más desde el principio.",
+                    "hecha suele ser más caro que instalar unos paneles de más desde el principio. Si ese "
+                    "es tu caso, conviene leer antes cómo "
+                    "<a href=\"/aerotermia/aerotermia-con-placas-solares-fotovoltaicas/\">combinar aerotermia "
+                    "con placas solares</a>, porque cambia bastante el dimensionado recomendado.",
                 ],
             },
         ],
@@ -204,7 +211,10 @@ ARTICLES = [
                     "Si tu tejado está libre de sombras (chimeneas, antenas, árboles, edificios "
                     "colindantes, otras aguas del propio tejado) a lo largo del día, un inversor "
                     "central con optimizadores de potencia en los paneles más problemáticos suele "
-                    "ser la opción más económica sin sacrificar apenas rendimiento.",
+                    "ser la opción más económica sin sacrificar apenas rendimiento. Antes de decidir, "
+                    "calcula "
+                    "<a href=\"/placas-solares/cuantas-placas-solares-necesito-casa-100m2/\">cuántos "
+                    "paneles necesitas realmente</a>: el número de cadenas condiciona el inversor.",
                     "Si tienes sombras parciales recurrentes, varias orientaciones de tejado en la "
                     "misma instalación, o quieres poder ampliar la instalación por fases sin "
                     "rediseñarla, los microinversores suelen compensar su sobrecoste inicial con "
@@ -278,7 +288,9 @@ ARTICLES = [
                     "Código de Autoconsumo (CAU), necesario para que el contador registre "
                     "correctamente la energía exportada e importada. Sin CAU, no puedes "
                     "acogerte a la compensación de excedentes aunque tu instalación esté "
-                    "físicamente terminada.",
+                    "físicamente terminada, ni contratar una "
+                    "<a href=\"/baterias-solares/mejor-bateria-virtual-sin-cuotas/\">batería "
+                    "virtual</a> con tu comercializadora.",
                 ],
             },
             {
@@ -356,7 +368,9 @@ ARTICLES = [
                     "o prefiere no inmovilizar capital.",
                     "La batería física compensa cuando ya tienes cubierta la inversión en paneles, "
                     "valoras la independencia energética ante cortes de suministro, y tu patrón de "
-                    "consumo nocturno es alto (por ejemplo, con coche eléctrico que cargas de noche). "
+                    "consumo nocturno es alto (por ejemplo, con coche eléctrico que cargas de noche, "
+                    "o con una <a href=\"/aerotermia/consumo-aerotermia-mensual-invierno/\">bomba de "
+                    "calor de aerotermia funcionando en invierno</a>). "
                     "El plazo de amortización habitual, sin ayudas, se sitúa entre 8 y 14 años; con "
                     "subvención, puede bajar a 5-8 años.",
                 ],
@@ -488,7 +502,9 @@ ARTICLES = [
                     "contractuales reales. Compara también contra la opción de no contratar batería "
                     "virtual y quedarte simplemente con la compensación de excedentes estándar del "
                     "mercado libre, que en muchos casos, para excedentes moderados, resulta más simple "
-                    "y con menos condiciones ocultas.",
+                    "y con menos condiciones ocultas. Y si te planteas dar el salto al almacenamiento "
+                    "real, revisa antes la <a href=\"/baterias-solares/bateria-fisica-vs-bateria-virtual/\">"
+                    "comparativa económica entre batería física y virtual</a>.",
                 ],
             },
         ],
@@ -544,7 +560,10 @@ ARTICLES = [
                     "un 15% y un 30% frente a un consumo sin optimizar el horario, sin cambiar el consumo en kWh.",
                     "Si además dispones de placas solares, cada kWh que la bomba de calor consume "
                     "durante las horas de sol tiene coste marginal cero (o casi), lo que cambia por "
-                    "completo la ecuación económica frente a depender solo de la red.",
+                    "completo la ecuación económica frente a depender solo de la red. Explicamos cómo "
+                    "conseguirlo en la guía de "
+                    "<a href=\"/aerotermia/aerotermia-con-placas-solares-fotovoltaicas/\">programación "
+                    "de los impulsos de calor con excedente solar</a>.",
                 ],
             },
         ],
@@ -610,7 +629,7 @@ ARTICLES = [
                         ["Superior a 5,0", "Excelente, típico de instalaciones con suelo radiante (temperaturas de impulsión bajas)"],
                     ],
                 },
-                "note": "El SCOP real también depende de la temperatura de impulsión de tu sistema de emisión: cuanto más baja (suelo radiante frente a radiadores de alta temperatura), mejor rendimiento estacional obtendrás con el mismo equipo.",
+                "note": "El SCOP real también depende de la temperatura de impulsión de tu sistema de emisión: cuanto más baja (suelo radiante frente a radiadores de alta temperatura), mejor rendimiento estacional obtendrás con el mismo equipo. Ese rendimiento es el que determina, en última instancia, <a href=\"/aerotermia/consumo-aerotermia-mensual-invierno/\">cuánto pagarás cada mes en invierno</a>.",
             },
         ],
         "faq": [
@@ -737,7 +756,10 @@ ARTICLES = [
                 "h2": "Compatibilidad con otras ayudas",
                 "paragraphs": [
                     "La deducción del IRPF es, en general, compatible con las subvenciones "
-                    "autonómicas o los fondos Next Generation, pero la base de la deducción se "
+                    "autonómicas o los fondos Next Generation (y se aplica tanto si la obra ha sido "
+                    "una instalación fotovoltaica como la sustitución de una caldera por "
+                    "<a href=\"/aerotermia/rendimiento-cop-scop-aerotermia/\">una bomba de calor de "
+                    "aerotermia</a>), pero la base de la deducción se "
                     "calcula sobre el importe efectivamente pagado por el contribuyente, es decir, "
                     "descontando la parte ya cubierta por la subvención recibida. Conviene revisar "
                     "la normativa vigente en el ejercicio fiscal concreto, ya que los porcentajes y "
@@ -805,7 +827,9 @@ ARTICLES = [
                 "h2": "Precio orientativo de un contrato de mantenimiento",
                 "paragraphs": [
                     "Un contrato de mantenimiento anual con visita de técnico para una bomba de "
-                    "calor residencial suele costar entre 90 € y 180 € al año, según la complejidad "
+                    "calor residencial suele costar entre 90 € y 180 € al año (un coste que conviene "
+                    "incluir al calcular <a href=\"/aerotermia/consumo-aerotermia-mensual-invierno/\">el "
+                    "gasto real de la aerotermia</a>), según la complejidad "
                     "del sistema (con o sin ACS, con o sin suelo radiante) y la zona geográfica. "
                     "Mantener el equipo revisado no es solo una cuestión de garantía: un equipo con "
                     "el filtro sucio o la unidad exterior obstruida puede perder varios puntos de "
@@ -875,6 +899,9 @@ ARTICLES = [
                     "eléctrico, y por la potencia contratada (término de potencia), pero no existe "
                     "hoy un cargo específico por autoconsumir tu propia energía solar en una "
                     "vivienda unifamiliar tipo.",
+                    "Este es, precisamente, el marco que hace posible la "
+                    "<a href=\"/baterias-solares/bateria-fisica-vs-bateria-virtual/\">compensación de "
+                    "excedentes y las baterías virtuales</a> tal y como se comercializan hoy. "
                     "Es importante distinguir esta situación actual del debate periódico sobre "
                     "posibles nuevos cargos de \"respaldo\" al sistema eléctrico que en ocasiones "
                     "resurge en el debate regulatorio europeo; a la fecha de esta guía, no existe "

@@ -10,8 +10,10 @@ subir a cualquier hosting estático) en ../public/.
 
 No tiene dependencias externas: solo la librería estándar de Python 3.
 """
+import json
 import os
 import shutil
+import unicodedata
 from datetime import date
 
 from content import SITE, CATEGORIES, ARTICLES, LEGAL_PAGES
@@ -39,16 +41,6 @@ def url_for(path):
     return SITE["base_url"].rstrip("/") + path
 
 
-def nav_html(active_slug=None):
-    items = []
-    for c in CATEGORIES:
-        active = " active" if c["slug"] == active_slug else ""
-        items.append(
-            f'<li><a class="nav-link{active}" href="/{c["slug"]}/">{c["name"].split(":")[0] if ":" in c["name"] else c["name"].split(" y ")[0]}</a></li>'
-        )
-    return "\n".join(items)
-
-
 NAV_LABELS = {
     "placas-solares": "Placas solares",
     "baterias-solares": "Baterías",
@@ -57,7 +49,7 @@ NAV_LABELS = {
 }
 
 
-def nav_html(active_slug=None):  # noqa: F811 (intentional override, simpler labels)
+def nav_html(active_slug=None):
     items = []
     for c in CATEGORIES:
         active = " active" if c["slug"] == active_slug else ""
@@ -102,8 +94,10 @@ def footer_html():
     cat_links = "\n".join(
         f'<li><a href="/{c["slug"]}/">{c["name"]}</a></li>' for c in CATEGORIES
     )
+    # El rótulo sale del título real de la página, no del slug: derivarlo del
+    # slug perdía las tildes ("Politica de privacidad").
     legal_links = "\n".join(
-        f'<li><a href="/{slug}/">{slug.replace("-", " ").capitalize()}</a></li>'
+        f'<li><a href="/{slug}/">{LEGAL_CONTENT[slug]["title"]}</a></li>'
         for slug in LEGAL_PAGES
     )
     year = date.today().year
@@ -132,8 +126,9 @@ def footer_html():
 """.strip()
 
 
-def ad_slot(position_id, label="Espacio publicitario"):
-    return f"""<div class="ad-slot" data-ad-position="{position_id}" aria-hidden="true">
+def ad_slot(position_id, label="Espacio publicitario", modifier=""):
+    classes = "ad-slot" + (f" {modifier}" if modifier else "")
+    return f"""<div class="{classes}" data-ad-position="{position_id}" aria-hidden="true">
   <span class="ad-slot-label">{label}</span>
   <!-- Bloque AdSense: sustituir por <ins class="adsbygoogle"> con el ad-slot real antes de publicar -->
 </div>"""
@@ -157,8 +152,6 @@ def breadcrumb_schema(crumbs):
         if path:
             item["item"] = url_for(path)
         elements.append(item)
-    import json
-
     data = {
         "@context": "https://schema.org",
         "@type": "BreadcrumbList",
@@ -257,11 +250,12 @@ def render_home():
 </section>
 """.strip()
 
-    trust = """
+    planned_total = sum(c["planned"] for c in CATEGORIES)
+    trust = f"""
 <section class="trust-strip">
   <div class="wrap trust-grid">
-    <div><span class="trust-num">103</span><span class="trust-label">artículos planificados en el mapa de contenidos</span></div>
-    <div><span class="trust-num">4</span><span class="trust-label">silos temáticos con revisión periódica</span></div>
+    <div><span class="trust-num">{len(ARTICLES)}</span><span class="trust-label">guías publicadas y revisadas</span></div>
+    <div><span class="trust-num">{planned_total}</span><span class="trust-label">artículos en el mapa de contenidos</span></div>
     <div><span class="trust-num">0</span><span class="trust-label">marcas patrocinadoras de nuestras comparativas</span></div>
   </div>
 </section>
@@ -364,9 +358,9 @@ def render_category(cat):
 
     roadmap_note = f"""
 <div class="roadmap-note">
-  <p>Estamos ampliando este silo cada semana según el
-  <a href="/sobre-nosotros/">plan de contenidos</a> hasta cubrir las {("14" if cat['slug']=='aerotermia' else "12" if cat['slug'] in ('baterias-solares',) else "15" if cat['slug']=='placas-solares' else "14")}
-  guías previstas para esta categoría. Si buscas un tema que todavía no está publicado,
+  <p>Publicadas {len(arts)} de las {cat['planned']} guías previstas para este silo. Ampliamos la
+  categoría cada semana siguiendo nuestro <a href="/sobre-nosotros/">plan de contenidos</a>.
+  Si buscas un tema que todavía no está publicado,
   <a href="/contacto/">escríbenos</a> y lo priorizamos.</p>
 </div>
 """.strip()
@@ -406,8 +400,21 @@ def render_category(cat):
 
 # --------------------------------------------------------------------------- article
 
+def slugify(text):
+    """Slug ASCII a partir de un titular en castellano (para anclas #id)."""
+    normalized = unicodedata.normalize("NFKD", text)
+    ascii_text = "".join(ch for ch in normalized if not unicodedata.combining(ch))
+    out = []
+    for ch in ascii_text.lower():
+        if ch.isalnum():
+            out.append(ch)
+        elif out and out[-1] != "-":
+            out.append("-")
+    return "".join(out).strip("-")
+
+
 def render_article_section(sec):
-    html = [f"<h2>{sec['h2']}</h2>"]
+    html = [f'<h2 id="{slugify(sec["h2"])}">{sec["h2"]}</h2>']
     for p in sec.get("paragraphs", []):
         html.append(f"<p>{p}</p>")
     if "table" in sec:
@@ -430,13 +437,22 @@ def render_article(article):
 
     intro_html = "\n".join(f"<p>{p}</p>" for p in article["intro"])
 
+    # Los huecos in-content se reparten por volumen de contenido, no por índice:
+    # dos anuncios seguidos en secciones cortas empeoran la lectura y la densidad
+    # publicitaria que exigen las políticas de AdSense.
+    total_sections = len(article["sections"])
+    ad_after = {0}
+    if total_sections >= 4:
+        ad_after.add(total_sections // 2 + total_sections % 2)
+
     sections_html = []
+    ad_n = 0
     for i, sec in enumerate(article["sections"]):
         sections_html.append(render_article_section(sec))
-        if i == 0:
-            sections_html.append(ad_slot(f"article-{article['slug']}-1", "Espacio publicitario (tras el primer bloque)"))
-        elif i == 1:
-            sections_html.append(ad_slot(f"article-{article['slug']}-2", "Espacio publicitario (in-content)"))
+        if i in ad_after and i < total_sections - 1:
+            ad_n += 1
+            label = "Espacio publicitario (tras el primer bloque)" if ad_n == 1 else "Espacio publicitario (in-content)"
+            sections_html.append(ad_slot(f"article-{article['slug']}-{ad_n}", label))
 
     faq_html = ""
     if article.get("faq"):
@@ -463,29 +479,52 @@ def render_article(article):
 </section>
 """.strip()
 
+    # El índice solo aporta navegación si el artículo tiene suficientes secciones.
+    toc_html = ""
+    if len(article["sections"]) >= 3:
+        toc_items = "".join(
+            f'<li><a href="#{slugify(s["h2"])}">{s["h2"]}</a></li>' for s in article["sections"]
+        )
+        toc_html = f"""
+    <nav class="toc" aria-label="Contenido de esta guía">
+      <h2 class="eyebrow">En esta guía</h2>
+      <ol>{toc_items}</ol>
+    </nav>"""
+
+    aside_html = f"""
+<aside class="article-aside">
+  <div class="aside-sticky">{toc_html}
+    {ad_slot(f"article-{article['slug']}-sidebar", 'Espacio publicitario (300x600)', modifier='ad-slot--tower')}
+  </div>
+</aside>
+""".strip()
+
     body = f"""
 <article class="article">
   <header class="page-header">
     <div class="wrap">
-      {breadcrumb_html(crumbs)}
-      <p class="eyebrow">{cat['name']} · {article['intent']}</p>
-      <h1>{article['title']}</h1>
-      <p class="article-meta">{article['reading_minutes']} min de lectura · Actualizado el {article['updated']} · Equipo editorial de {SITE['name']}</p>
+      <div class="article-head">
+        {breadcrumb_html(crumbs)}
+        <p class="eyebrow">{cat['name']} · {article['intent']}</p>
+        <h1>{article['title']}</h1>
+        <p class="article-meta">{article['reading_minutes']} min de lectura · Actualizado el {article['updated']} · Equipo editorial de {SITE['name']}</p>
+      </div>
     </div>
   </header>
-  <div class="wrap article-body">
-    {intro_html}
-    {''.join(sections_html)}
-    {faq_html}
-    <p class="article-disclosure">Las cifras de este artículo son orientativas y pueden variar según
-    proveedor, comunidad autónoma y fecha de consulta. Contrasta siempre con al menos dos
-    presupuestos o fuentes oficiales antes de tomar una decisión de inversión.</p>
+  <div class="wrap article-layout">
+    <div class="article-body">
+      {intro_html}
+      {''.join(sections_html)}
+      {faq_html}
+      <p class="article-disclosure">Las cifras de este artículo son orientativas y pueden variar según
+      proveedor, comunidad autónoma y fecha de consulta. Contrasta siempre con al menos dos
+      presupuestos o fuentes oficiales antes de tomar una decisión de inversión.</p>
+    </div>
+    {aside_html}
   </div>
 </article>
 {related_html}
 """.strip()
-
-    import json
 
     article_schema = {
         "@context": "https://schema.org",
@@ -531,10 +570,13 @@ estimación y no un dato certificado, lo indicamos explícitamente en el propio 
 se revisan y actualizan. Cada artículo muestra la fecha de su última revisión. Si detectas
 un dato desactualizado, puedes avisarnos desde la página de <a href="/contacto/">contacto</a>.</p>
 <h2>Plan de contenidos</h2>
-<p>Trabajamos con un mapa de contenidos de 103 artículos organizados en cuatro silos:
-placas solares y autoconsumo fotovoltaico, baterías físicas y virtuales, aerotermia y
-climatización eficiente, y subvenciones, tarifas y mantenimiento. Publicamos de forma
-progresiva siguiendo ese mapa.</p>
+<p>Trabajamos con un mapa de contenidos de 60 artículos organizados en cuatro silos:
+<a href="/placas-solares/">placas solares y autoconsumo fotovoltaico</a>,
+<a href="/baterias-solares/">baterías físicas y virtuales</a>,
+<a href="/aerotermia/">aerotermia y climatización eficiente</a>, y
+<a href="/subvenciones-tarifas/">subvenciones, tarifas y mantenimiento</a>.
+Publicamos de forma progresiva siguiendo ese mapa, priorizando en cada silo las
+preguntas que hoy se resuelven peor en internet.</p>
 """,
     },
     "contacto": {
@@ -675,17 +717,29 @@ def render_404():
         description="La página solicitada no existe.",
         canonical_path="/404.html",
         body=body,
+        extra_head='<meta name="robots" content="noindex, follow">',
     )
 
 
 # --------------------------------------------------------------------------- sitemap / robots
 
 def write_sitemap():
-    urls = ["/"] + [f"/{c['slug']}/" for c in CATEGORIES]
-    urls += [f"/{cat_of(a)['slug']}/{a['slug']}/" for a in ARTICLES]
-    urls += [f"/{slug}/" for slug in LEGAL_PAGES]
+    # (ruta, lastmod). La home y las categorías heredan la fecha del artículo
+    # más reciente que enlazan; las páginas legales no declaran lastmod.
+    newest_overall = max(a["updated"] for a in ARTICLES)
+    urls = [("/", newest_overall)]
+    for c in CATEGORIES:
+        arts = articles_of(c["slug"])
+        newest = max((a["updated"] for a in arts), default=None)
+        urls.append((f"/{c['slug']}/", newest))
+    urls += [(f"/{cat_of(a)['slug']}/{a['slug']}/", a["updated"]) for a in ARTICLES]
+    urls += [(f"/{slug}/", None) for slug in LEGAL_PAGES]
+
     entries = "\n".join(
-        f"  <url><loc>{url_for(u)}</loc></url>" for u in urls
+        f"  <url><loc>{url_for(u)}</loc>"
+        + (f"<lastmod>{lastmod}</lastmod>" if lastmod else "")
+        + "</url>"
+        for u, lastmod in urls
     )
     xml = f'<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n{entries}\n</urlset>\n'
     with open(os.path.join(OUT_DIR, "sitemap.xml"), "w", encoding="utf-8") as f:

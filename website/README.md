@@ -11,7 +11,8 @@ cualquier hosting y para insertar Google AdSense cuando la cuenta esté aprobada
 website/
 ├── src/
 │   ├── content.py   # Todo el CONTENIDO: categorías y artículos (texto plano)
-│   └── build.py     # El generador: combina content.py con las plantillas HTML
+│   ├── build.py     # El generador: combina content.py con las plantillas HTML
+│   └── check.py     # Validador: enlaces rotos, anclas, metadatos duplicados
 ├── static/
 │   ├── css/style.css
 │   ├── js/main.js   # Menú móvil + banner de cookies (placeholder)
@@ -30,10 +31,17 @@ Requiere solo Python 3 (sin dependencias externas):
 ```bash
 cd website/src
 python3 build.py
+python3 check.py   # opcional pero recomendado antes de desplegar
 ```
 
 Genera `website/public/` con 23 páginas: home, 4 páginas de categoría,
-12 artículos completos, 5 páginas legales, `sitemap.xml`, `robots.txt` y `404.html`.
+12 artículos completos, 5 páginas legales, `sitemap.xml` (con `lastmod` por
+página), `robots.txt` y `404.html` (marcado `noindex`).
+
+`check.py` recorre el HTML generado y falla (código de salida 1) si encuentra
+enlaces internos rotos, anclas `#id` inexistentes, páginas sin `title`,
+sin meta description o sin canonical, o títulos y descripciones duplicados
+entre páginas — el tipo de error de canibalización que penaliza en SEO.
 
 ## Cómo previsualizarlo en local
 
@@ -67,6 +75,11 @@ vez la curva de producción solar y la curva de demanda de calefacción —
 visualizando la complementariedad estacional entre los dos verticales del
 sitio (ver sección 2 del plan de negocio).
 
+Los artículos usan una maquetación de dos columnas en escritorio: la columna
+de lectura (limitada a 72 caracteres de medida, alineada con el H1) y una
+barra lateral fija con el índice de la guía y la torre publicitaria. Por
+debajo de 1040 px la barra lateral desaparece y el texto pasa a una columna.
+
 ## Posiciones publicitarias ya preparadas (`.ad-slot`)
 
 Siguiendo las posiciones recomendadas en la sección 6 del plan de negocio,
@@ -75,8 +88,15 @@ en:
 
 - Home, tras la cuadrícula de categorías (`home-in-content`)
 - Cada página de categoría, al final del listado (`category-<slug>-footer`)
-- Cada artículo, tras el primer bloque de contenido y de nuevo a mitad
-  de artículo (`article-<slug>-1`, `article-<slug>-2`)
+- Cada artículo, in-content (`article-<slug>-1`, `article-<slug>-2`)
+- Cada artículo, torre lateral 300x600 fija en escritorio
+  (`article-<slug>-sidebar`), oculta por debajo de 1040 px
+
+Los huecos in-content **no** se insertan en posiciones fijas: se reparten según
+el número de secciones del artículo (uno tras la primera sección y, solo en
+artículos de 4 o más secciones, otro hacia la mitad), y nunca justo antes del
+cierre del artículo. Así se evita la densidad publicitaria excesiva que penalizan
+las políticas de AdSense en artículos con secciones cortas.
 
 Para activar AdSense, sustituye cada `<div class="ad-slot" ...>` en
 `build.py` (función `ad_slot`) por el `<ins class="adsbygoogle">` real con
